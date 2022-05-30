@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- Book List App -->
+  <div class="book-list-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="app-title text-center py-3">
+            <h2>Book List</h2>
+          </div><!-- /.title -->
+        </div><!-- /.col-12 -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-12">
+          <form action="#" class="book-form">
+            <div class="mb-3">
+              <label for="title" class="form-label">Book Title</label>
+              <input type="text" class="form-control" id="title" placeholder="Book Title">
+            </div>
+            <div class="mb-3">
+              <label for="author" class="form-label">Author</label>
+              <input type="text" class="form-control" id="author" placeholder="Author">
+            </div>
+            <div class="mb-3">
+              <label for="category" class="form-label">Category</label>
+              <select class="form-select" aria-label="Category" id="category">
+                <option selected value="Others">Book Category</option>
+                <option value="Action and Adventure">Action and Adventure</option>
+                <option value="Comic Book or Graphic Novel">Comic Book or Graphic Novel</option>
+                <option value="Detective and Mystery">Detective and Mystery</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Horror">Horror</option>
+                <option value="Literary Fiction">Literary Fiction</option>
+                <option value="Others">Others</option>
+              </select>
+            </div><!-- /.mb-3 -->
+            <div class="row g-3 mb-3">
+              <div class="col">
+                <label for="price" class="form-label">Price</label>
+                <input type="text" class="form-control" id="price" placeholder="Price">
+              </div>
+              <div class="col">
+                <label for="year" class="form-label">Year</label>
+              <input type="text" class="form-control" id="year" placeholder="Year">
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="button" id="addBook" class="btn btn-primary w-100">Primary</button>
+            </div><!-- /.text-center -->
+          </form><!-- /.book-form -->
+        </div><!-- /.col-12 -->
+      </div><!-- /.row -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <table class="table table-bordered border-primary">
+            <thead>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Category</th>
+              <th>Year</th>
+              <th>Price</th>
+            </thead>
+            <tbody id="bookList"></tbody>
+          </table>
+        </div><!-- /.col-12 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.book-list-area -->
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
